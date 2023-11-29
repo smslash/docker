@@ -2,6 +2,8 @@
 
 ## 1. Установка Docker:
 
+Подключаемся к виртуальной машине
+
 ```console
 ssh user@128.199.44.148
 ```
@@ -15,13 +17,13 @@ ssh user@128.199.44.148
 Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-51-generic x86_64)
 ```
 
-Сначала проверим установлен ли Docker.
+Сначала проверим установлен ли Docker
 
 ```console
 docker --version
 ```
 
-Выдает следующее:
+Выдает следующее
 
 ```console
 Command 'docker' not found, but can be installed with:
@@ -30,14 +32,14 @@ sudo snap install docker     # version 20.10.24, or
 sudo apt  install docker.io  # version 19.03.8-0ubuntu1.20.04.2
 ```
 
-Таким образом ВР (Виртуальная Машина) подсказала как можно установить Docker (можно выбрать любую версию). После установки выдает следующее:
+Таким образом ВМ (Виртуальная Машина) подсказала как можно установить Docker (можно выбрать любую версию). После установки выдает следующее
 
 ```console
 user@server:~$ sudo snap install docker
 docker 20.10.24 from Canonical✓ installed
 ```
 
-При необходимости можно установить последнюю версию *Docker* следующим образом:
+При необходимости можно установить последнюю версию *Docker* следующим образом
 
 ```console
 sudo apt install docker-ce docker-ce-cli containerd.io
