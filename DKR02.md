@@ -1,6 +1,6 @@
 # DKR 02: Basics. Флаги запуска
 
-## Подключение
+## 1. Подключение
 
 Подключаемся к виртуальной машине
 
@@ -11,7 +11,7 @@ ssh user@134.122.49.203
 Терминал спросит **Are you sure you want to continue connecting (yes/no/[fingerprint])?** 
 Отвечаем **yes**. Вводим пароль для входа.
 
-## Настройка nginx.conf
+## 2. Настройка nginx.conf
 
 Создаем и настраиваем файл *nginx.conf*
 
@@ -23,7 +23,7 @@ nano nginx.conf
 
 Сохраняем и закрываем файл *nginx.conf*
 
-## Запуск контейнера rbm-dkr-02
+## 3. Запуск контейнера rbm-dkr-02
 
 ```console
 docker run -d -p 127.0.0.1:8889:80 --name rbm-dkr-02 -v /home/user/nginx.conf:/etc/nginx/nginx.conf nginx:stable
@@ -43,7 +43,7 @@ curl 127.0.0.1:8889
 
 Получаем ответ *Welcome to the training program RebrainMe: Docker!*
 
-## Сравниваем подсчет md5sum
+## 4. Сравниваем подсчет md5sum
 
 Сравним md5sum нашего nginx.conf и /etc/nginx/nginx.conf.
 
