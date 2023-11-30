@@ -27,7 +27,7 @@ docker exec -ti rbm-dkr-03 md5sum /etc/nginx/nginx.conf
 Отправим запрос на http://127.0.0.1:8890
 
 ```console
-curl 127.0.0.1:8890
+curl http://127.0.0.1:28080
 ```
 
 ## 3. Настройка нового конфиг файла
